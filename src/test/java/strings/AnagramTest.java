@@ -2,36 +2,38 @@ package strings;
 
 import junit.framework.TestCase;
 import junit.framework.TestResult;
+import org.junit.Test;
 
-public class AnagramTest extends TestCase {
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
-    public void setUp() throws Exception {
-        super.setUp();
-    }
+public class AnagramTest {
 
+
+    @Test
     public void testMain() {
         String str1 = "JavaJ2eeStrutsHibernate";
         String str2 = "StrutsHibernateJavaJ2ee";
-        assertTrue(AnagramTest.isRotation(str1, str2));
+        assertTrue(Anagram.areAnagrams(str1, str2));
     }
-
+    @Test
     public void testWithEmptyString(){
         String str1 = "";
         String str2 = "";
-        assertTrue(AnagramTest.isRotation(str1,str2));
+        assertTrue(Anagram.areAnagrams(str1,str2));
     }
+    @Test
     public void testWithSingleChar(){
         String str1= "a";
         String str2= "a";
-        assertTrue(AnagramTest.isRotation(str1,str2));
+        assertTrue(Anagram.areAnagrams(str1,str2));
     }
+    @Test
     public void testAreRotations_False() {
         String str1 = "HelloWorld";
-        String str2 = "WorldHello";
-        assertFalse(AnagramTest.isRotation(str1, str2));
+        String str2 = "WorldrrrrrHello";
+        assertFalse(Anagram.areAnagrams(str1, str2));
     }
 
-    private static boolean isRotation(String str1, String str2) {
-        return true;
-    }
+
 }
