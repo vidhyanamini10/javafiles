@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListReverserTest {
+public class ListReversalTest {
 
     @Test
     public void testReverseList() {

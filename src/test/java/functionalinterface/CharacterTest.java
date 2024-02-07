@@ -7,17 +7,17 @@ public class CharacterTest extends TestCase {
     @Test
         public void testIdentifyAndPrintRepeated() {
             System.out.println("Test Case 1:");
-            Character.identifyAndPrintRepeated("programming");
+            Characterss.identifyAndPrintRepeated("programming");
 
             System.out.println("\nTest Case 2:");
-            Character.identifyAndPrintRepeated("java");
+            Characterss.identifyAndPrintRepeated("java");
 
             System.out.println("\nTest Case 3:");
-            Character.identifyAndPrintRepeated("hello");
+            Characterss.identifyAndPrintRepeated("hello");
 
             // Testing exception for null input
             try {
-                Character.identifyAndPrintRepeated(null);
+                Characterss.identifyAndPrintRepeated(null);
                 fail("Expected IllegalArgumentException for null input.");
             } catch (IllegalArgumentException e) {
                 // Expected exception
