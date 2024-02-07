@@ -1,6 +1,6 @@
 package functionalinterface;
 
-public class Character {
+public class Characterss {
 
 
         public static void identifyAndPrintRepeated(String input) {
@@ -20,5 +20,7 @@ public class Character {
                     }
                 }
             }
+
+
         }
 }
